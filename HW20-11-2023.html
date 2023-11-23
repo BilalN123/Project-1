@@ -232,7 +232,82 @@
     .nav a[href^="https://www.facebook.com"] i {
       color: #1877F2; /* Facebook blue */
     }
+    @media screen and (max-width: 840px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+          align-items: center;
+        }
+        .header-hero header {
+          position: unset;
+        }
+        .down {
+          display: flex;
+          flex-direction: column;
+          min-height: 800px;
+        }
 
+        .down .creative-designers,
+        .down .ios-developer,
+        .down .maintainance,
+        .down .time-management {
+          min-height: 200px;
+        }
+
+        #features {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+
+        .right,
+        .left {
+          min-width: 60%;
+          text-align: center;
+          
+        }
+
+        #features .left {
+         height: 700px;
+        }
+
+        #features .left div hr {
+          margin-left: 10px;
+        }
+
+
+        #features .left .technical-solutions {
+          margin-top: 0px;
+        }
+
+        .left p {
+          min-width: 500px;
+        }
+
+        #features .left h2 {
+          padding-left: 40px;
+        }
+
+        .right {
+          
+        }
+      }
+
+      @media only screen and (max-width: 620px) {
+        header .brand-logo-wrapper {
+          background-color: aqua;
+        }
+        nav {
+          flex-direction: column;
+        }
+      }
+    
+
+
+
+    
   </style>
 
 </head>
